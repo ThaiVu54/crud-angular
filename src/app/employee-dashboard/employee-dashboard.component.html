@@ -1,0 +1,35 @@
+<div class="container">
+  <nav class="navbar navbar-light bg-primary">
+    <div class="container-fluid">
+      <h1 style="margin: auto">LIST EMPLOYEE</h1>
+      <div class="d-flex">
+        <button class="btn-success" [routerLink]="['/add-employee']">Add employee</button>
+      </div>
+    </div>
+  </nav>
+
+  <table border= 1; class="table mt-3" style="text-align: center;">
+    <thead>
+      <tr>
+        <td scope="column">#ID</td>
+        <td>FIRST NAME</td>
+        <td>LAST NAME</td>
+        <td>EMAIL</td>
+        <td>PHONE</td>
+        <td colspan="3">Action</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let e of getAllEmployees()">
+        <td>{{ e.id}}</td>
+        <td>{{ e.firstName }}</td>
+        <td>{{ e.lastName }}</td>
+        <td>{{e.email }}</td>
+        <td>{{ e.phone }}</td>
+        <td><button class="btn btn-secondary" routerLink="/detailEmployee/{{e.id}}">Detail</button></td>
+        <td><button class="btn btn-info" routerLink="/update-employee/{{e.id}}">Edit</button></td>
+        <td><button class="btn btn-danger max-3">Delete</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

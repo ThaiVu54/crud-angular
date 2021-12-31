@@ -1,0 +1,25 @@
+<!--
+<app-employee-dashboard></app-employee-dashboard>
+<nav class="nav justify-content-center">
+<router-outlet></router-outlet> -->
+
+
+
+<div class="container">
+  <nav class="row">
+    <nav class="nav justify-content-center">
+      <a class="nav-link active" [routerLink]="['/listEmployee']" routerLinkActive="router-link-active">Employee List</a>
+      <!-- <a class="nav-link" [routerLink]="['/detailEmployee']">Employee detail</a> -->
+      <!-- <a class="nav-link" [routerLink]="['/admin']">Admin dashboard</a>
+      <a class="nav-link" [routerLink]="['/countdown']">Countdown App</a>
+      <a class="nav-link" [routerLink]="['/reactive']">Reactive Form</a>
+      <a class="nav-link" [routerLink]="['/productAdd-reactive']">Product add</a>
+      <a class="nav-link" [routerLink]="['/login']">Login</a> -->
+    </nav>
+  </nav>
+  <section class="row">
+    <div class="col">
+      <router-outlet></router-outlet>
+    </div>
+  </section>
+</div>

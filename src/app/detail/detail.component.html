@@ -1,0 +1,30 @@
+
+
+<div class="container">
+  <nav class="navbar navbar-light bg-primary">
+    <div class="container-fluid">
+      <h1>INFORMATION</h1>
+
+    </div>
+  </nav>
+
+  <table border= 1; class="table mt-3" style="text-align: center;">
+    <thead>
+      <tr>
+        <td>FIRST NAME</td>
+        <td>LAST NAME</td>
+        <td>EMAIL</td>
+        <td>PHONE</td>
+        <!-- <td colspan="3">Action</td> -->
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngIf="detailEmployee">
+        <td>{{ detailEmployee.firstName }}</td>
+        <td>{{ detailEmployee.lastName }}</td>
+        <td>{{detailEmployee.email }}</td>
+        <td>{{ detailEmployee.phone }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
