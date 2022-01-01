@@ -21,11 +21,11 @@ export class UpdateEmployeeComponent implements OnInit {
   // }
   // // employees: any;
   // // employees: any;
-  // constructor(private router: Router,
-  //             private activeRouter: ActivatedRoute,
-  //             private employeeService: EmployeeService
-  //             ) {
-  //   }
+  constructor(private router: Router,
+              private activeRouter: ActivatedRoute,
+              private employeeService: EmployeeService
+              ) {
+    }git 
 
   ngOnInit(): void {
   }
